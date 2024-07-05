@@ -7,4 +7,4 @@ Intial hello wrold code to introduce myself to the Rust Programming language
 A user input guessing game, run via the terminal, where the user keeps on guessing the number until it matches the random number seelcted by the code. I added another functionality to this where the user can input q and exit the game at any given time.
 
 # 3. variables
-An introduction to variable in Rust
+An introduction to variable in Rust.
