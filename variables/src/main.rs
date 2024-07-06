@@ -1,5 +1,3 @@
-
-
 //understanding difference between mutable and immutable variables
 fn main() {
     let mut x = 5;
