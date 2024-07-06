@@ -9,6 +9,7 @@ fn main() {
     floating();
     numeric_operation();
     tuple_eg();
+    arrays();
 
 }
 // example to showcase shadowing
@@ -69,5 +70,19 @@ fn tuple_eg(){
     let six = tup2.2;
 
     println!("Five hundred = {five_hundred}, three.two = {three_point_two}, six = {six}\n")
+
+}
+
+// arrays example
+fn arrays(){
+
+    let arr = [1,2,3,4,5];
+    let arr2 = [3; 5]; // when you want same elements in the entire array
+
+    //accessing the array
+    let first = arr[0];
+    let third = arr[2];
+    println!("First element = {first}, Third element = {third}");
+    println!("Entire array = {:?}",arr2);
 
 }
