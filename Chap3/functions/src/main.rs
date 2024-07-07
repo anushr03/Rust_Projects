@@ -4,8 +4,10 @@ fn main() {
     another_function(5);
     multiple_arguments(6,'C');
     statments_expressions();
-    let x = return_five();
+    let x = return_ten();
     println!("The value of x is {x}");
+    let x = another_one(10);
+    println!("Now the value of x is {x}\n");
 }
 
 // When using arguments, always declare the type
@@ -36,6 +38,10 @@ fn statments_expressions(){
 }
 
 //functions with return values
-fn return_five() -> i32 {
-    5
+fn return_ten() -> i32 {
+    10
+}
+
+fn another_one(x:i32) -> i32 {
+    x+1
 }
