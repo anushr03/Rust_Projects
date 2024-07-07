@@ -27,3 +27,8 @@ Functions can return values to the code that calls them. We don’t name return 
 
 ### a. if statements
 An if expression allows you to branch your code depending on conditions. You provide a condition and then state, “If this condition is met, run this block of code. If the condition is not met, do not run this block of code.”
+
+### b. Loops
+It’s often useful to execute a block of code more than once. For this task, Rust provides several loops, which will run through the code inside the loop body to the end and then start immediately back at the beginning. To experiment with loops, let’s make a new project called loops.
+
+Rust has three kinds of loops: **loop**, **while**, and **for**. 
