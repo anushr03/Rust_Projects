@@ -11,3 +11,10 @@ A user input guessing game, run via the terminal, where the user keeps on guessi
 # 3. variables
 
 An introduction to variables in Rust. Learned about <ins>shadowing</ins>, <ins>floating points</ins> and difference between <ins>tuples and arrays</ins> in Rust
+
+# 4. Functions
+
+Learned about functions. 
+
+##### a. Statements and Expressions
+Firstly learned about the difference between statements and expression. Statements do not return a value and expressions return a value. This is why expressions do not have a semicolon. If we add the semicolon, it becomes a statement and therefore will not return a value.
