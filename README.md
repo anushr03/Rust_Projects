@@ -21,3 +21,9 @@ Firstly learned about the difference between statements and expression. Statemen
 
 ### b. Functions with return values
 Functions can return values to the code that calls them. We don’t name return values, but we must declare their type after an arrow (->)
+
+# 5. Control Flow
+ Learned about if expressions and loops
+
+### a. if statements
+An if expression allows you to branch your code depending on conditions. You provide a condition and then state, “If this condition is met, run this block of code. If the condition is not met, do not run this block of code.”
