@@ -53,6 +53,6 @@ fn main() {
     println!("{s}\n");
 }
 ```
-
+Here the scope of s is only valid between the two ```{}``` brackets. 
 
     
