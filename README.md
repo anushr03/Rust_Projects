@@ -47,7 +47,7 @@ The memory can find data faster when its on a stack as compared to the heap. All
 3. When the owner goes out of scope, the value will be dropped
 
 ### c. Variable scope
-```
+```rust
 fn main() {
     let s = "hello";
     println!("{s}\n");
@@ -67,7 +67,7 @@ At this point, the relationship between scopes and when variables are valid is s
 Unlike other data types that we have seen, ```string``` is a complex data type, which is stored on the heap. 
 
 I can also create a ```string``` from the string literal by using the ```from``` keyword. For eg.
-```
+```rust
 let s = String::from("hello");
 ```
 
