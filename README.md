@@ -55,4 +55,20 @@ fn main() {
 ```
 Here the scope of s is only valid between the two ```{}``` brackets. 
 
+In other words, there are two important points in time here:
+
+- When s comes into scope, it is valid.
+
+- It remains valid until it goes out of scope.
+
+At this point, the relationship between scopes and when variables are valid is similar to that in other programming languages.
+
+### d. The ```string``` type
+Unlike other data types that we have seen, ```string``` is a complex data type, which is stored on the heap. 
+
+I can also create a ```string``` from the string literal by using the ```from``` keyword. For eg.
+```
+let s = String::from("hello");
+```
+
     
