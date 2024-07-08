@@ -32,3 +32,16 @@ An if expression allows you to branch your code depending on conditions. You pro
 It’s often useful to execute a block of code more than once. For this task, Rust provides several loops, which will run through the code inside the loop body to the end and then start immediately back at the beginning. To experiment with loops, let’s make a new project called loops.
 
 Rust has three kinds of loops: **loop**, **while**, and **for**. 
+
+# 6. Understanding Ownership
+Ownership is a set of rules that govern how a Rust program manages memory. In Rust, memory is managed through a system of ownership with a set of rules that the compiler checks.
+
+### a. Stacks and Heaps
+The memory can find data faster when its on a stack as compared to the heap. All data stored on the stack must have a known, fixed size. Data with an unknown size at compile time or a size that might change must be stored on the heap instead.
+
+### b. Ownership Rules
+1. Each value in the rust has an _owner_
+
+2. There can only be one owner at a time
+
+3. When the owner goes out of scope, the value will be dropped
