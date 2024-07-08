@@ -47,11 +47,12 @@ The memory can find data faster when its on a stack as compared to the heap. All
 3. When the owner goes out of scope, the value will be dropped
 
 ### c. Variable scope
-    ```
-    fn main() {
+```
+fn main() {
     let s = "hello";
     println!("{s}\n");
-    }
-    ```
+}
+```
+
 
     
