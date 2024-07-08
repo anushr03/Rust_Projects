@@ -1,18 +1,25 @@
 use std::io;
 fn main() {
     
-    println!("Enter the temperature in Farenheit: ");
-    let mut farenheit = String::new();
+    loop{
 
-    io::stdin()
-        .read_line(&mut farenheit)
-        .expect("failed to read line");
+        println!("Enter the temperature in Farenheit: ");
+        let mut farenheit = String::new();
 
-        let farenheit: f32 = farenheit.trim().parse().expect("Please type a number!");
+        io::stdin()
+            .read_line(&mut farenheit)
+            .expect("failed to read line");
 
-    println!("The temperature is: {farenheit}F");
+            let farenheit :f32 = match farenheit.trim().parse() {
+                Ok(num) => num,
+                Err(_) => break,
+            };
+        
 
-    let  celcius = (farenheit - 32.0) * 5.0/9.0;
-    println!("The temperature in Celcius is: {:.2}C", celcius);
+        println!("The temperature is: {farenheit}F");
+
+        let  celcius = (farenheit - 32.0) * 5.0/9.0;
+        println!("The temperature in Celcius is: {:.2}C\n", celcius);
+    }
 
 }
