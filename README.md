@@ -45,3 +45,13 @@ The memory can find data faster when its on a stack as compared to the heap. All
 2. There can only be one owner at a time
 
 3. When the owner goes out of scope, the value will be dropped
+
+### c. Variable scope
+    ```
+    fn main() {
+    let s = "hello";
+    println!("{s}\n");
+    }
+    ```
+
+    
