@@ -90,5 +90,5 @@ In Rust, the memory is instantly returned, once the variable goes out of scope. 
 
     // do stuff with s
 
-}    // this scope is now over, and s is no longer valid
+}   // this scope is now over, and s is no longer valid
 ```
