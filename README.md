@@ -147,3 +147,6 @@ println!("{s3}");
 - At any given time, you can have either one mutable reference or any number of immutable references.
 
 - References must always be valid.
+
+### f. The Slice type
+Slices let you reference a contiguous sequence of elements in a collection rather than the whole collection. A slice is a kind of reference, so it does not have ownership.
