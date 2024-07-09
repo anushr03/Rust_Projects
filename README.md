@@ -82,4 +82,13 @@ With the ```String``` type, in order to support a mutable, growable piece of tex
 
 That first part is done by us: when we call ```String::from```, its implementation requests the memory it needs. This is pretty much universal in programming languages.
 
-    
+In Rust, the memory is instantly returned, once the variable goes out of scope. For eg, the code below but with ```String```, instead of the string literal
+
+```rust
+{
+    let s = String::from("hello"); // s is valid from this point forward
+
+    // do stuff with s
+    } // this scope is now over, and s is no
+      // longer valid
+```
