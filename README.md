@@ -119,6 +119,25 @@ The issue is only with mutable reference. We can have as many immutable referenc
 
 ```rust
 let  s = String::from("HellO");
-let s1 = & s;
-let s = & s;
+let s1 = &s;
+let s2 = &s;
+```
+Also, we cannot have mutable and immutable references at the same time. For eg.
+
+```rust
+let mut s = String::from("HellO");
+let s1 = &s;
+let s2 = &s;
+let s3 = &mut s;
+```
+
+The code above will throw a compile-time error for s3. Although if the code below is implemented, the compiler will compile the code.
+
+```rust
+let mut s = String::from("HellO");
+let s1 = &s;
+let s2 = &s;
+println!("s1 = {s1}, s2 = {s2}");
+let s3 = &mut s;
+println!("{s3}");
 ```
