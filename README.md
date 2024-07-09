@@ -92,3 +92,33 @@ In Rust, the memory is instantly returned, once the variable goes out of scope. 
 
 }   // this scope is now over, and s is no longer valid
 ```
+
+### f. Referencing and Borrowing
+In Rust you cannot have two refereneces at the same time. The restriction preventing multiple mutable references to the same data at the same time allows for mutation but in a very controlled fashion.The benefit of having this restriction is that Rust can prevent data races at compile time. A _data race_ is similar to a race condition and happens when these three behaviors occur:
+
+- Two or more pointers access the same data at the same time.
+
+- At least one of the pointers is being used to write to the data.
+
+- There’s no mechanism being used to synchronize access to the data. 
+
+Data races cause undefined behavior and can be difficult to diagnose and fix when you’re trying to track them down at runtime; Rust prevents this problem by refusing to compile code with data races!
+
+Although to have multiple mutable references, we can always define a scope using ```{}``` brackets. For eg.
+
+```rust
+let mut s = String::from("HellO");
+{
+    let s1 = &mut s;
+} // s1 goes out of scope here, so another mutable reference can be made to s
+
+let s = &mut s;
+```
+
+The issue is only with mutable reference. We can have as many immutable references as we like. So the code below would compile.
+
+```rust
+let  s = String::from("HellO");
+let s1 = & s;
+let s = & s;
+```
