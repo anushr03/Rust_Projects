@@ -150,3 +150,9 @@ println!("{s3}");
 
 ### f. The Slice type
 Slices let you reference a contiguous sequence of elements in a collection rather than the whole collection. A slice is a kind of reference, so it does not have ownership.
+
+# 7. Structs
+
+A struct or a structure is a custom data type that lets you package together and name multiple related values that make up a meaningful group
+
+Unlike Tuples, in struct we name each piece of data so its clear what the values mean
