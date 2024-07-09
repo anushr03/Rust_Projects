@@ -141,3 +141,9 @@ println!("s1 = {s1}, s2 = {s2}");
 let s3 = &mut s;
 println!("{s3}");
 ```
+
+### The Rules of References
+
+- At any given time, you can have either one mutable reference or any number of immutable references.
+
+- References must always be valid.
