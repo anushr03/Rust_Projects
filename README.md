@@ -156,3 +156,6 @@ Slices let you reference a contiguous sequence of elements in a collection rathe
 A struct or a structure is a custom data type that lets you package together and name multiple related values that make up a meaningful group
 
 Unlike Tuples, in struct we name each piece of data so its clear what the values mean
+
+### a. Tuple Structs
+Rust also supports structs that look similar to tuples, called *tuple structs*. Tuple structs have the added meaning the struct name provides but don’t have names associated with their fields; rather, they just have the types of the fields. Tuple structs are useful when you want to give the whole tuple a name and make the tuple a different type from other tuples, and when naming each field as in a regular struct would be verbose or redundant.
