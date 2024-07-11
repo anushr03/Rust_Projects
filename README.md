@@ -167,4 +167,11 @@ Methods are similar to functions: we declare them with the fn keyword and a name
 Where structs give you a way of grouping together related fields and data, like a ```Rectangle``` with its ```width``` and ```height```, enums give you a way of saying a value is one of a possible set of values. For example, we may want to say that `Rectangle` is one of a set of possible shapes that also includes `Circle` and `Triangle`. To do this, Rust allows us to encode these possibilities as an enum.
 
 ### a. The ```option``` enum
-Rust does not have a ```null```. But the concept behind the `null` is important.So rust has the ```Option<t>``` that is an enum that can encode the concept of the value being present or absent.
+Rust does not have a ```null```. But the concept behind the `null` is important. So Rust has the ```Option<t>``` that is an enum that can encode the concept of the value being present or absent.
+
+```rust
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
