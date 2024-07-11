@@ -4,7 +4,7 @@ runme:
     relativePath: README.md
   session:
     id: 01J2CM4VC5HC3E3QFBMMHC0NKG
-    updated: 2024-07-11 17:56:12-04:00
+    updated: 2024-07-11 18:02:26-04:00
 ---
 
 This Repo keeps track of all the projects I did to learn the Rust language using the Rust official programming language pdf([book](ht******************************************ml))
@@ -188,3 +188,12 @@ enum Option<T> {
 
 ### b.```if let``` 
  The `if let` syntax lets you combine `if` and `let` into a less verbose way to handle values that match one pattern while ignoring the rest.
+
+```rust
+let config_max = So****u8);
+if let Some(max) = config_max {
+    println!("The maximum is configured to be {max}");
+}
+```
+
+The syntax `if let` takes a pattern and an expression separated by an equal sign. It works the same way as a `match`, where the expression is given to the `match` and the pattern is its first arm. In this case, the pattern is `Some(max)`, and the `max` binds to the value inside the `Some`. We can then use `max` in the body of the `if let` block in the same way we used `max` in the corresponding match arm. The code in the `if let` block isn’t run if the value doesn’t match the pattern.

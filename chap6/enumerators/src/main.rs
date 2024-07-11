@@ -51,3 +51,14 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 }
 
 // concise control flow with if let
+let config_max = Some(3u8);
+match config_max {
+    Some(max) => println!("The maximum is configured to be {max}"),
+    _ => (), 
+}
+
+// But better way to write this
+let config_max = Some(3u8);
+if let Some(max) = config_max {
+    println!("The maximum is configured to be {max}");
+}
