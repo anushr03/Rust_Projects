@@ -229,3 +229,12 @@ Vectors can only store values of the same types.
 
 ### b. String
 The `String` type, which is provided by Rust’s standard library rather than coded into the core language, is a growable, mutable, owned, UTF-8 encoded string type
+
+Many of the same operations available with `Vec <T>` are available with `String` as well, because `String` is actually implemented as a wrapper around a vector of bytes with some extra guarantees, restrictions, and capabilities. An example of a function that works the same way with `Vec<T>` and `String` is the new function to create an instance
+
+```rust
+let mut s = String::new();
+```
+
+### c. Hash Maps
+The type `HashMap<K, V>` stores a mapping of keys of type `K` to values of type `V` using a hashing function, which determines how it places these keys and values into memory.
