@@ -4,7 +4,7 @@ runme:
     relativePath: README.md
   session:
     id: 01J2CM4VC5HC3E3QFBMMHC0NKG
-    updated: 2024-07-12 14:18:17-04:00
+    updated: 2024-07-14 10:51:22-04:00
 ---
 
 This Repo keeps track of all the projects I did to learn the Rust language using the Rust official programming language pdf([book](ht******************************************ml))
@@ -212,3 +212,16 @@ The _crate root_ is a source file that the Rust compiler starts from and makes u
 
 ### a. Modules
 Modules let us organize code within a crate for readability and easy reuse. Modules also allow us to control the privacy of items, because code within a module is private by default. Private items are internal implementation details not available for outside use. We can choose to make modules and the items within them public, which exposes them to allow external code to use and depend on them.
+
+# 11. Common collections
+
+1. Vector: A vector allows you to store a variable number of values next to each other
+
+2. String: A string is a collection of data.
+
+3. Hash Map: A hash map allows you to associate a value with a particular key.
+
+### a. Vectors
+Vectors can only store values of the same types.
+
+### b. String
