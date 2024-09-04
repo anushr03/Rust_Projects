@@ -19,7 +19,7 @@ fn main() {
 
         //added functionality to quit game anytime. trim() because &str add newline character     
         if guess.trim() == "q"{
-            println!("Goodbye;");
+            println!("Goodbye");
             break;
         }
 
